@@ -1,0 +1,16 @@
+{
+  "name": "ntumun-website",
+  "version": "1.0.0",
+  "description": "The website for NTUMUN 2019",
+  "main": "index.js",
+  "repository": "git@github.com:solderneer/ntumun-website.git",
+  "author": "Sudharshan <solderneer@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "autoprefixer": "^9.7.1",
+    "postcss-font-magician": "^2.3.0",
+    "postcss-modules": "^1.4.1",
+    "tailwindcss": "^1.1.3"
+  }
+}
