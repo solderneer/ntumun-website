@@ -9,62 +9,94 @@
   <meta name="author" content="Sudharshan <solderneer.me>">
 
   <link rel="stylesheet" href="main.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300, 400|Roboto:300,400,700|Bungee+Shade&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700|Nunito+Sans:900&display=swap" rel="stylesheet">
 
 </head>
 
 <body class="font-body antialiased">
   <!-- Navbar -->
-  <nav class="absolute inset-x-0 top-0 flex items-center justify-between flex-wrap p-6 z-10">
+  <nav class="absolute inset-x-0 top-0 flex items-center justify-end flex-wrap py-12 px-20 z-20">
     <div class="block lg:hidden">
       <button class="flex items-center px-3 py-2 border rounded text-white border-white">
         <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
       </button>
   </div>
-  <div class="w-full block flex-grow hidden lg:flex lg:items-center lg:w-auto">
-    <div class="text-md lg:flex-grow">
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-4">
+  <div class="text-md font-bold hidden lg:flex">
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-6">
         Home
       </a>
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-4">
-        About
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-6">
+        About Us
       </a>
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-4">
-        Conference 
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-6">
+        The Conference 
       </a>
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-4">
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-6">
         Press Blog
       </a>
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-4">
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-6">
         Contact
       </a>
       <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white">
         FAQ
       </a>
     </div>
-    <div>
-      <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-500 hover:bg-white mt-4">Register</a>
-    </div>
-  </div>
   </nav>
   <!--  End of navbar -->
 
   <!-- Jumbotron TODO: Replace image with NTU high resolution--> 
-  <div class="w-screen h-screen bg-cover flex justify-center items-center z-0" style="background-image: url(assets/bg.jpg); filter: brightness(50%);">
+  <div class="w-screen h-screen bg-cover flex justify-center items-center z-0" style="background-image: url(assets/bg.jpg); filter: grayscale(100%) brightness(60%);">
   </div>
   <!-- Information and title group -->
   <div class="absolute inset-0 mx-auto flex flex-col justify-center text-center text-white max-w-xl z-10">
-    <h1 class="font-display text-6xl">NTUMUN 2020</h1>
-    <h2 class="font-header text-xl uppercase font-bold tracking-widest">28<sup>th</sup> February to 1<sup>st</sup> March 2020</h2>
-    <blockquote class="font-body mt-6 text-2xl font-light italic">Inspiring Constructive Dialogue Towards a Secure and Sustainable World</blockquote>
+    <h1 class="font-display text-6xl font-bold tracking-widest">NTUMUN 2020</h1>
+    <h2 class="text-xl uppercase font-bold tracking-widest">28<sup>th</sup> February to 1<sup>st</sup> March 2020</h2>
+    <blockquote class="mt-6 text-2xl font-light">Inspiring Constructive Dialogue Towards a Secure and Sustainable World</blockquote>
     
     <!-- Buttons to link to application for delegate and chairs -->
-    <div class="flex flex-col justify-center mt-4">
-      <a href="#" class="inline-block text-lg font-semibold py-2 leading-none border-2 rounded text-white border-white hover:border-transparent hover:text-blue-500 hover:bg-white w-full">Apply for Delgate</a>
-      <a href="#" class="inline-block text-lg font-semibold py-2 leading-none border-2 rounded text-white border-white hover:border-transparent hover:text-blue-500 hover:bg-white w-full mt-2">Apply for Chair</a>
+    <div class="flex flex-row justify-center mt-4">
+      <a href="#" class="inline-block text-lg font-semibold py-4 leading-none border-2 rounded text-white border-white hover:border-transparent hover:text-black hover:bg-white w-full mx-3">Apply for Delgate</a>
+      <a href="#" class="inline-block text-lg font-semibold py-4 leading-none border-2 rounded text-white border-white hover:border-transparent hover:text-black hover:bg-white w-full mx-3">Apply for Chair</a>
     </div>
   </div>
   <!-- End of jumbotron -->
+
+  <!-- Letter from the secretary general -->
+  <div class="pt-10 px-64">
+    <h1 class="font-display text-3xl font-normal mb-10">Letter from the Secretary General</h1>
+    <div class="content leading-relaxed">
+      <p class="mb-6 font-semibold">
+        Dear Delegates, Chairpersons, Faculty Advisors, and Distinguished guests,
+      </p>
+      <p class="mb-4">
+        On behalf of the Secretariat and the Organizing Committee, it is my absolute pleasure and honor to welcome you all to the 14th annual Nanyang Technological University Model United Nations 2020.
+      </p>
+      <p class="mb-4">
+        At NTUMUN, we sincerely uphold our virtues of cooperation, collaboration and commitment. We have been striving tirelessly for an entire year to bring to you an Asia-wide conference advocates for high academic standards, cooperative dialogue and holistic and productive diplomacy. Based on these values, we discussed and deliberated and finally arrived at a conclusion regarding our theme for NTUMUN 2020 - "Inspiring Constructive Dialogue Towards a Secure and Sustainable World". In 2019, the world experienced a lot of emotions, the frustration of the Hong Kong rioters, Greta Thunberg’s disappointment and anger over bureaucratic failure with respect to climate change, the remorse and sadness of the Kashmiri population, uncertainty over the US-China Trade War, the continued suffering of the Syrian population and so on. We hope to encourage discussion regarding these phenomenon from a fact-based, solution-centric point of view, thus inspiring constructive debate in line with our aforementioned virtues of cooperation, collaboration and commitment.
+      </p>
+      <p class="mb-4">
+        Further developing on this theme, we are introducing 9 committees this year along with Press Corps. Apart from the essential committees such as United Nations Security Council, International Court of Justice, World Health Organization, United Nations Human Rights Council, United Nations Educational, Scientific and Cultural Organization, Special Political and Decolonization Committee and Disarmament & International Security Committee, we will also be introducing three new committees namely The Crisis Committee, Food and Agricultural Organization and the International Labor Organization. All the topics of discussion for each committee have been finalized and can be found under the ‘Conference’ tab on the Website. The earlier we receive your application, the higher the chances of being allocated in your first choice committee!
+      </p>
+      <p class="mb-4"> 
+        Singapore’s founding Prime Minister Late Mr. Lee Kuan Yew once said, “The task of the leaders must be to provide or create for them a strong framework within which they can learn, work hard, be productive and be rewarded accordingly. And this is not easy to achieve.” In this spirit, let us take on the challenge of being the leaders who uphold the virtues of cooperation, collaboration and commitment to put forward comprehensive resolutions, constructive dialogue and invigorating yet dynamic debate. I hope you are able to use this platform to progress further on your respective MUN growth journey and are able to walk out of the conference with a sense of pride and achievement.
+      </p>
+      <p class="mb-4">
+        For any general queries, please feel free to reach out to our Delegate Affairs team at contact@ntumun.com and they will be very happy to assist you. For sponsorships and business related queries, feel free to reach out to our Business team at business@ntumun.com. You can even email me personally at hithalli.chawla@ntumun.com and I will be delighted to provide further assistance!
+      </p>
+      <p class="mb-4">
+        Once again on behalf of the Secretariat and the Organizing Committee, thank you so much for your interest in NTUMUN 2020 and I look forward to welcoming you in Singapore on 28th February, 2020.
+      </p>
+        <div class="mb-4">
+        <div class="">Sincerely,<br /></div>
+        <div class="font-semibold mt-2">Hithalli Chawla <br /></div>
+        <div class="italic text-sm">
+          Secretary-General <br />
+          NTUMUN 2020 <br />
+        </div>
+    </div>
+    </div>
+  </div>
+  <!-- End of letter -->
   <script src="index.js"></script>
 </body>
 </html>
