@@ -8,6 +8,7 @@
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="Sudharshan <solderneer.me>">
 
+  <link rel="stylesheet" href="gallery.prefixed.css">
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="link.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700|Nunito+Sans:900&display=swap" rel="stylesheet">
@@ -22,8 +23,8 @@
       <button class="flex items-center px-3 py-2 border rounded text-white border-white">
         <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
       </button>
-  </div>
-  <div class="text-md font-bold hidden lg:flex">
+    </div>
+    <div class="text-md font-bold hidden lg:flex">
       <a href="#responsive-header" class="animate-link text-white mr-6">
         Home
       </a>
@@ -43,6 +44,9 @@
         FAQ
       </a>
     </div>
+    <div>
+      <a href="#" class="inline-block text-md leading-none font-bold text-white border-white py-2 px-4 border-2 rounded mr-6">Register</a>
+    </div>
   </nav>
   <!--  End of navbar -->
 
@@ -57,8 +61,8 @@
     
     <!-- Buttons to link to application for delegate and chairs -->
     <div class="flex flex-row flex-wrap justify-center mt-4">
-      <a href="#" class="inline-block text-lg font-semibold py-4 leading-none rounded bg-blue-400 text-white font-bold md:w-56 w-full mx-3 my-2">Apply for Delgate</a>
-      <a href="#" class="inline-block text-lg font-semibold py-4 leading-none border-2 rounded cursor-not-allowed md:w-56 w-full mx-3 my-2 opacity-50">Apply for Chair</a>
+      <a href="#" class="inline-block text-lg font-semibold py-4 leading-none rounded bg-blue-400 text-white font-bold md:w-56 w-full mx-2 my-2">Apply for Delegate</a>
+      <a href="#" class="inline-block text-lg font-semibold py-4 leading-none border-2 rounded cursor-not-allowed md:w-56 w-full mx-3 my-2 opacity-50">Apply for Chair (Closed)</a>
     </div>
   </div>
   <!-- End of jumbotron -->
@@ -71,7 +75,7 @@
   </div>
 
   <!-- Letter from the secretary general -->
-  <div class="pt-10 w-10/12 lg:w-7/12 mx-auto">
+  <div class="pt-10 w-10/12 lg:w-7/12 mx-auto hidden">
     <h1 class="font-display text-3xl font-normal mb-10">Letter from the Secretary General</h1>
     <div class="content leading-relaxed">
       <p class="mb-6 font-semibold">
@@ -106,6 +110,97 @@
     </div>
   </div>
   <!-- End of letter -->
+
+  <!-- About section -->
+  <section class="bg-white flex flex-col items-center text-black p-10">
+    <div class="flex flex-row justify-around items-start">
+      <!-- About NTUMUN section -->
+      <div class="flex flex-col w-6/12 h-full">
+        <h2 class="font-display text-3xl mb-3">About Us</h2>
+        <p class="text-sm font-bold mb-4">
+          NTU Model United Nations (NTUMUN) is one of the most prestigious international events organized by the NTU Debating Society, one of NTU’s premier clubs. Since 2006, students from around the world have come together to discuss important geo-political and social issues in the annually-held conference.
+        </p>
+        <p class="text-sm font-semibold mb-4">
+          NTUMUN is a unique platform for you to meet, discuss and collaborate with equally motivated and talented peers over the most relevant issues from across the globe. Over 400 participants from more than 25 countries attended NTUMUN 2019, and our network continues to grow to bring to you a challenging and enriching environment in 2020. In the past, NTUMUN has been graced by guests such as His Excellency Mr Paul Madden, British High Commissioner to Singapore; Her Excellency Ms Amanda Brooks, Acting British High Commissioner; Ambassador Barry Desker, Dean S Rajaratnam School of International Studies; Prof Rohan Gunaratna, an International Terrorism Expert; Ms Yeo Law Hwee, Director of the European Union Centre in Singapore; and Mr Geoffrey Yu, Advisor at the Ministry of Foreign Affairs, Government of Singapore.
+        </p>
+        <p class="text-sm font-semibold">
+          Our aim is to foster a constructive forum for open dialogue on global issues and the conference is designed to acquaint its participants with the nations of the world community, their policies, and the problems that arise as these nations coexist. The nature of NTUMUN makes it very relevant to student communities, members of which are the potential leaders of tomorrow and who shall be influenced by issues around them and in the world at large.
+        </p>
+      </div>
+      <div class="flex flex-col w-5/12" style="height: 30rem">
+        <div class="w-full bg-cover h-full" style="background-image: url(assets/about3.webp); filter: grayscale(90%);"></div>
+      </div>
+    </div>
+  </section>
+  <!-- End of about section -->
+
+  <!-- Registration section -->
+  <section class="bg-blue-400 flex flex-col items-center text-white py-10 px-16">
+    <h2 class="font-display text-3xl mr-auto">Registration</h2>
+    <div class="flex flex-row justify-between">
+        <!-- Eligibility -->
+        <div class="py-2 w-6/12 mr-6">
+          <h3 class="text-xl mb-2 font-bold">Eligibility</h3>
+          <p class="text-sm font-semibold mb-4">
+            NTUMUN does not discriminate on the basis of race, color, religion (creed), gender, nationality, disability, or marital status.
+            Additionally, no prior MUN experience is required to participate.
+          </p>
+
+            <ul class="list-disc list-inside text-sm">
+              <li class="mb-2">Delegates must be 15-25 years old at the time of the conference.</li>
+              <li class="mb-2">All participants must be registered at a formal educational institution. If you are enrolled at National Service in the case of local students, or are taking a gap year, you are welcome to apply as well.</li>
+              <li class="mb-2">Only one representative/teacher advisor is required to register on behalf of a delegation. Please note that delegations must consist of a minimum of 5 and maximum of 10 delegates. There is no limit to the number of delegations from each institution.</li>
+              <li class="mb-2">The NTUMUN Organising Committee cannot directly assist you with arranging visa. Therefore, all participants must ensure that they are able to visit Singapore with the required documents and formalities in place.</li>
+            </ul>
+        </div>
+        <!-- End of eligibility -->
+        <!-- Register and pay -->
+        <div class="py-2 w-6/12 ml-6">
+          <h3 class="text-xl mb-4 font-bold">Cost of Attendance</h3>
+          <table class="table-auto text-sm">
+            <thead>
+              <tr>
+                <th class="border-2 px-4 py-2">Type</th>
+                <th class="border-2 px-4 py-2">Early Bird Registration</th>
+                <th class="border-2 px-4 py-2">Regular Registration</th>
+                <th class="border-2 px-4 py-2">Late Registration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border-2 px-4 py-2">Local</td>
+                <td class="border-2 px-4 py-2">SGD 85</td>
+                <td class="border-2 px-4 py-2">SGD 105</td>
+                <td class="border-2 px-4 py-2">SGD 105</td>
+              </tr>
+              <tr>
+                <td class="border-2 px-4 py-2">International (without accommodation)</td>
+                <td class="border-2 px-4 py-2">SGD 110</td>
+                <td class="border-2 px-4 py-2">SGD 130</td>
+                <td class="border-2 px-4 py-2">SGD 150</td>
+              </tr>
+              <tr>
+                <td class="border-2 px-4 py-2">International (with accommodation)</td>
+                <td class="border-2 px-4 py-2">SGD 310</td>
+                <td class="border-2 px-4 py-2">SGD 330</td>
+                <td class="border-2 px-4 py-2">SGD 350</td>
+              </tr>
+              <tr>
+                <td class="border-2 px-4 py-2">Payment Deadline</td>
+                <td class="border-2 px-4 py-2">15<sup>th</sup> November</td>
+                <td class="border-2 px-4 py-2">11<sup>th</sup> January</td>
+                <td class="border-2 px-4 py-2">7<sup>th</sup> February</td>
+              </tr>
+            </tbody>
+        </div>
+        <!-- End of register and pay -->
+    </div>
+        <div class="flex flex-row w-full justify-center items-center">
+        <a href="#" class="text-md leading-none text-white border-white py-2 px-4 border-2 font-bold rounded mr-3">Instructions</a>
+        <a href="#" class="text-md leading-none text-white border-white py-2 px-4 border-2 font-bold rounded mr-3">Register</a>
+        <a href="#" class="text-md leading-none text-white border-white py-2 px-4 border-2 font-bold rounded">Pay</a>
+        </div>
+  </section>
   <script src="index.js"></script>
 </body>
 </html>
