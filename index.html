@@ -9,35 +9,37 @@
   <meta name="author" content="Sudharshan <solderneer.me>">
 
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="link.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700|Nunito+Sans:900&display=swap" rel="stylesheet">
 
+  <script src="https://kit.fontawesome.com/d029011165.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="font-body antialiased">
   <!-- Navbar -->
-  <nav class="absolute inset-x-0 top-0 flex items-center justify-end flex-wrap py-12 px-20 z-20">
+  <nav class="absolute inset-x-0 top-0 flex items-center justify-end flex-wrap md:py-12 md:px-20 py-6 px-6 z-20">
     <div class="block lg:hidden">
       <button class="flex items-center px-3 py-2 border rounded text-white border-white">
         <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
       </button>
   </div>
   <div class="text-md font-bold hidden lg:flex">
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-6">
+      <a href="#responsive-header" class="animate-link text-white mr-6">
         Home
       </a>
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-6">
+      <a href="#responsive-header" class="animate-link text-white mr-6">
         About Us
       </a>
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-6">
+      <a href="#responsive-header" class="animate-link text-white mr-6">
         The Conference 
       </a>
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-6">
+      <a href="#responsive-header" class="animate-link text-white mr-6">
         Press Blog
       </a>
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-6">
+      <a href="#responsive-header" class="animate-link text-white mr-6">
         Contact
       </a>
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white">
+      <a href="#responsive-header" class="animate-link text-white mr-6">
         FAQ
       </a>
     </div>
@@ -48,21 +50,28 @@
   <div class="w-screen h-screen bg-cover flex justify-center items-center z-0" style="background-image: url(assets/bg.jpg); filter: grayscale(100%) brightness(60%);">
   </div>
   <!-- Information and title group -->
-  <div class="absolute inset-0 mx-auto flex flex-col justify-center text-center text-white max-w-xl z-10">
-    <h1 class="font-display text-6xl font-bold tracking-widest">NTUMUN 2020</h1>
+  <div class="absolute inset-0 mx-auto flex flex-col justify-center text-center text-white md:max-w-xl z-10 p-4">
+    <h1 class="font-display text-6xl font-bold tracking-widest leading-none"><span class="text-blue-400">NTU</span>MUN 2020</h1>
     <h2 class="text-xl uppercase font-bold tracking-widest">28<sup>th</sup> February to 1<sup>st</sup> March 2020</h2>
     <blockquote class="mt-6 text-2xl font-light">Inspiring Constructive Dialogue Towards a Secure and Sustainable World</blockquote>
     
     <!-- Buttons to link to application for delegate and chairs -->
-    <div class="flex flex-row justify-center mt-4">
-      <a href="#" class="inline-block text-lg font-semibold py-4 leading-none border-2 rounded text-white border-white hover:border-transparent hover:text-black hover:bg-white w-full mx-3">Apply for Delgate</a>
-      <a href="#" class="inline-block text-lg font-semibold py-4 leading-none border-2 rounded text-white border-white hover:border-transparent hover:text-black hover:bg-white w-full mx-3">Apply for Chair</a>
+    <div class="flex flex-row flex-wrap justify-center mt-4">
+      <a href="#" class="inline-block text-lg font-semibold py-4 leading-none rounded bg-blue-400 text-white font-bold md:w-56 w-full mx-3 my-2">Apply for Delgate</a>
+      <a href="#" class="inline-block text-lg font-semibold py-4 leading-none border-2 rounded cursor-not-allowed md:w-56 w-full mx-3 my-2 opacity-50">Apply for Chair</a>
     </div>
   </div>
   <!-- End of jumbotron -->
 
+  <!-- Jumbotron socials -->
+  <div class="absolute inset-x-0 bottom-0 flex flex-row md:justify-end justify-center items-center w-full z-10 text-white text-3xl p-8">
+    <a href="#"><i class="fab fa-instagram mr-5 hover:text-blue-400"></i></a>
+    <a href="#"><i class="fab fa-facebook-square mr-5 hover:text-blue-400"></i></a>
+    <a href="#"><i class="fas fa-envelope hover:text-blue-400"></i></a>
+  </div>
+
   <!-- Letter from the secretary general -->
-  <div class="pt-10 px-64">
+  <div class="pt-10 w-10/12 lg:w-7/12 mx-auto">
     <h1 class="font-display text-3xl font-normal mb-10">Letter from the Secretary General</h1>
     <div class="content leading-relaxed">
       <p class="mb-6 font-semibold">
@@ -81,7 +90,7 @@
         Singapore’s founding Prime Minister Late Mr. Lee Kuan Yew once said, “The task of the leaders must be to provide or create for them a strong framework within which they can learn, work hard, be productive and be rewarded accordingly. And this is not easy to achieve.” In this spirit, let us take on the challenge of being the leaders who uphold the virtues of cooperation, collaboration and commitment to put forward comprehensive resolutions, constructive dialogue and invigorating yet dynamic debate. I hope you are able to use this platform to progress further on your respective MUN growth journey and are able to walk out of the conference with a sense of pride and achievement.
       </p>
       <p class="mb-4">
-        For any general queries, please feel free to reach out to our Delegate Affairs team at contact@ntumun.com and they will be very happy to assist you. For sponsorships and business related queries, feel free to reach out to our Business team at business@ntumun.com. You can even email me personally at hithalli.chawla@ntumun.com and I will be delighted to provide further assistance!
+      For any general queries, please feel free to reach out to our Delegate Affairs team at <span><a href="#" class="animate-link animate-link-black animate-link-show">contact@ntumun.com</a></span> and they will be very happy to assist you. For sponsorships and business related queries, feel free to reach out to our Business team at <span><a href="#" class="animate-link animate-link-black animate-link-show">business@ntumun.com</a></span>. You can even email me personally at <span><a href="#" class="animate-link animate-link-black animate-link-show">hithalli.chawla@ntumun.com</a></span> and I will be delighted to provide further assistance!
       </p>
       <p class="mb-4">
         Once again on behalf of the Secretariat and the Organizing Committee, thank you so much for your interest in NTUMUN 2020 and I look forward to welcoming you in Singapore on 28th February, 2020.
