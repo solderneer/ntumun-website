@@ -19,11 +19,32 @@
 
 .grid-img {
   filter: grayscale(90%) brightness(40%);
-  transition: filter 2s;
+  transition: filter 1s;
+}
+
+.grid-img-text {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #63b3ed;
+  background-color: rgba(255, 255, 255, 0.8);
+
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 .grid-img:hover {
   filter: grayscale(0%) brightness(100%);
-  transition: filter 2s;
+  transition: filter 1s;
 }
+
+.grid-img:hover .grid-img-text {
+  opacity: 100;
+  transition: opacity 1s;
+}
+
 
