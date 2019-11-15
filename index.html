@@ -8,9 +8,10 @@
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="Sudharshan <solderneer.me>">
 
-  <link rel="stylesheet" href="gallery.prefixed.css">
+  <link rel="stylesheet" href="css/gallery.prefixed.css">
   <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="link.css">
+  <link rel="stylesheet" href="css/link.css">
+  <link rel="stylesheet" href="css/grids.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700|Nunito+Sans:900&display=swap" rel="stylesheet">
 
   <script src="https://kit.fontawesome.com/d029011165.js" crossorigin="anonymous"></script>
@@ -25,14 +26,14 @@
       </button>
     </div>
     <div class="text-md font-bold hidden lg:flex">
-      <a href="#responsive-header" class="animate-link text-white mr-6">
+      <a href="#home" class="animate-link text-white mr-6">
         Home
       </a>
-      <a href="#responsive-header" class="animate-link text-white mr-6">
+      <a href="#about-us" class="animate-link text-white mr-6">
         About Us
       </a>
-      <a href="#responsive-header" class="animate-link text-white mr-6">
-        The Conference 
+      <a href="#the-committees" class="animate-link text-white mr-6">
+        The Committees
       </a>
       <a href="#responsive-header" class="animate-link text-white mr-6">
         Press Blog
@@ -45,13 +46,13 @@
       </a>
     </div>
     <div>
-      <a href="#" class="inline-block text-md leading-none font-bold text-white border-white py-2 px-4 border-2 rounded mr-6">Register</a>
+      <a href="#registration" class="inline-block text-md leading-none font-bold text-white border-white hover:text-blue-400 hover:border-blue-400 py-2 px-4 border-2 rounded mr-6">Register</a>
     </div>
   </nav>
   <!--  End of navbar -->
 
   <!-- Jumbotron TODO: Replace image with NTU high resolution--> 
-  <div class="w-screen h-screen bg-cover flex justify-center items-center z-0" style="background-image: url(assets/bg.jpg); filter: grayscale(100%) brightness(60%);">
+  <div id="home" class="w-screen h-screen bg-cover flex justify-center items-center z-0" style="background-image: url(assets/bg.jpg); filter: grayscale(100%) brightness(60%);">
   </div>
   <!-- Information and title group -->
   <div class="absolute inset-0 mx-auto flex flex-col justify-center text-center text-white md:max-w-xl z-10 p-4">
@@ -112,11 +113,11 @@
   <!-- End of letter -->
 
   <!-- About section -->
-  <section class="bg-white flex flex-col items-center text-black p-10">
+  <section id="about-us" class="bg-white flex flex-col items-center text-black p-10">
     <div class="flex flex-row justify-around items-start">
       <!-- About NTUMUN section -->
       <div class="flex flex-col w-6/12 h-full">
-        <h2 class="font-display text-3xl mb-3">About Us</h2>
+        <h2 class="font-display text-3xl mb-3 mr-auto">About Us</h2>
         <p class="text-sm font-bold mb-4">
           NTU Model United Nations (NTUMUN) is one of the most prestigious international events organized by the NTU Debating Society, one of NTU’s premier clubs. Since 2006, students from around the world have come together to discuss important geo-political and social issues in the annually-held conference.
         </p>
@@ -135,7 +136,7 @@
   <!-- End of about section -->
 
   <!-- Registration section -->
-  <section class="bg-blue-400 flex flex-col items-center text-white py-10 px-16">
+  <section id="registration" class="bg-blue-400 flex flex-col items-center text-white py-10 px-16">
     <h2 class="font-display text-3xl mr-auto">Registration</h2>
     <div class="flex flex-row justify-between">
         <!-- Eligibility -->
@@ -200,6 +201,27 @@
         <a href="#" class="text-md leading-none text-white border-white py-2 px-4 border-2 font-bold rounded mr-3">Register</a>
         <a href="#" class="text-md leading-none text-white border-white py-2 px-4 border-2 font-bold rounded">Pay</a>
         </div>
+  </section>
+  <!-- End of Registration section -->
+
+  <!-- About the conference section -->
+  <section id="the-committees" class="relative text-center">
+    <div class="grid-overlay-text absolute z-10 flex justify-center align-center p-4">
+      <h1 class="font-display font-bold text-white uppercase tracking-widest pointer-events-none">The Committees</h1>
+    </div>
+    <!-- Committees -->
+    <div class="grid w-full">
+      <div class="grid-img bg-cover" style="background-image: url(assets/unhrc.jpg); grid-area: com1;"></div>
+      <div class="grid-img bg-cover" style="background-image: url(assets/ilo.jpg); grid-area: com2;"></div>
+      <div class="grid-img bg-cover" style="background-image: url(assets/who.jpg); grid-area: com3;"></div>
+      <div class="grid-img bg-cover" style="background-image: url(assets/specpol.jpg); grid-area: com4;"></div>
+      <div class="grid-img bg-cover" style="background-image: url(assets/disec.jpg); grid-area: com5;"></div>
+      <div class="grid-img bg-cover" style="background-image: url(assets/unsc.jpg); grid-area: com6;"></div>
+      <div class="grid-img bg-cover" style="background-image: url(assets/icj.jpg); grid-area: com7;"></div>
+      <div class="grid-img bg-cover" style="background-image: url(assets/unesco.jpg); grid-area: com8;"></div>
+      <div class="grid-img bg-cover" style="background-image: url(assets/crisis.jpg); grid-area: com9;"></div>
+      <div class="grid-img bg-cover" style="background-image: url(assets/press.jpg); grid-area: com10;"></div>
+    </div>
   </section>
   <script src="index.js"></script>
 </body>

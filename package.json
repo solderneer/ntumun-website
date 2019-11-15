@@ -10,6 +10,7 @@
   "dependencies": {
     "autoprefixer": "^9.7.1",
     "postcss-modules": "^1.4.1",
+    "smooth-scroll": "^16.1.0",
     "tailwindcss": "^1.1.3"
   }
 }
