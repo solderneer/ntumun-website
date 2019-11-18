@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="css/link.css">
   <link rel="stylesheet" href="css/grids.css">
+  <link rel="stylesheet" href="css/map.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700|Nunito+Sans:900&display=swap" rel="stylesheet">
 
   <script src="https://kit.fontawesome.com/d029011165.js" crossorigin="anonymous"></script>
@@ -279,7 +280,6 @@
                 Email
               </label>
               <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-blue-400" id="grid-password" placeholder="janedoe@ntumodulun.com">
-              <p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p>
             </div>
           </div>
           <div class="flex flex-wrap -mx-3 mb-3">
@@ -288,10 +288,13 @@
                 Message
               </label>
               <textarea rows="5" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-blue-400" id="grid-feedback" placeholder="The NTUMUN old website was honestly dreadful..."></textarea>
+              <p class="text-gray-600 text-xs italic mt-2">Make it as long and as crazy as you'd like</p>
+            </div>
+          </div>
         </form>
     </div>
-    <div class="flex flex-col w-6/12 h-full justify-center items-center">
-      <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Nanyang%20Executive%20center&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+    <div class="google-maps">
+      <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJl2t9rqYP2jER6RxWueO7y-Q&key=AIzaSyBy8ZCZLYb_2jSwX1BlYLgGx9q3EKdn2Oo" allowfullscreen></iframe>
     </div>
   </section>
   <script src="index.js"></script>
