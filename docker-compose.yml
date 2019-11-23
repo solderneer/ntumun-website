@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+    ntumun:
+        build: .
+        restart: always
+        expose:
+         - "80"
+        networks:
+         - proxy
+         - default
+        labels:
+         - "traefik.backend=ntumun"
+         - "traefik.docker.network=proxy"
+         - "traefik.basic.frontend.rule=Host:ntumun.solderneer.me"
+         - "traefik.enable=true"
+         - "traefik.basic.port=80"
+
+networks:
+    proxy:
+        external: true
