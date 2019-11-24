@@ -7,6 +7,10 @@
   "author": "Sudharshan <solderneer@gmail.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "serve": "parcel -p 3000 index.html",
+    "build": "parcel build index.html"
+  },
   "dependencies": {
     "autoprefixer": "^9.7.1",
     "postcss-modules": "^1.4.1",
