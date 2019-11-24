@@ -49,7 +49,7 @@
       </a>
     </div>
     <div>
-      <a href="#registration" class="inline-block text-md leading-none font-bold text-white border-white hover:text-blue-400 hover:border-blue-400 py-2 px-4 border-2 rounded mr-6">Register</a>
+      <a href="#registration" class="hidden lg:inline-block text-md leading-none font-bold text-white border-white hover:text-blue-400 hover:border-blue-400 py-2 px-4 border-2 rounded mr-6">Register</a>
     </div>
   </nav>
   <!--  End of navbar -->
@@ -116,10 +116,10 @@
   <!-- End of letter -->
 
   <!-- About section -->
-  <section id="about-us" class="bg-white flex flex-col items-center text-black p-10">
-    <div class="flex flex-row justify-around items-start">
+  <section id="about-us" class="bg-white flex flex-col items-center text-black lg:p-10 py-10 px-8">
+    <div class="flex flex-row flex-wrap justify-around items-stretch">
       <!-- About NTUMUN section -->
-      <div class="flex flex-col w-6/12 h-full">
+      <div class="flex flex-col lg:w-6/12 w-full h-full">
         <h2 class="font-display text-3xl mb-3 mr-auto">About Us</h2>
         <p class="text-sm font-bold mb-4">
           NTU Model United Nations (NTUMUN) is one of the most prestigious international events organized by the NTU Debating Society, one of NTU’s premier clubs. Since 2006, students from around the world have come together to discuss important geo-political and social issues in the annually-held conference.
@@ -131,7 +131,7 @@
           Our aim is to foster a constructive forum for open dialogue on global issues and the conference is designed to acquaint its participants with the nations of the world community, their policies, and the problems that arise as these nations coexist. The nature of NTUMUN makes it very relevant to student communities, members of which are the potential leaders of tomorrow and who shall be influenced by issues around them and in the world at large.
         </p>
       </div>
-      <div class="flex flex-col w-5/12" style="height: 30rem">
+      <div class="flex flex-col lg:w-5/12 w-full flex-grow lg:flex-grow lg:ml-10 lg:mt-0 lg:h-auto mt-5 h-64">
         <div class="w-full bg-cover h-full" style="background-image: url(assets/about3.webp); filter: grayscale(90%);"></div>
       </div>
     </div>
@@ -139,11 +139,11 @@
   <!-- End of about section -->
 
   <!-- Registration section -->
-  <section id="registration" class="bg-blue-400 flex flex-col items-center text-white py-10 px-16">
+  <section id="registration" class="bg-blue-400 flex flex-col items-center text-white lg:p-10 py-10 px-8">
     <h2 class="font-display text-3xl mr-auto">Registration</h2>
-    <div class="flex flex-row justify-between">
+    <div class="flex flex-row lg:flex-no-wrap flex-wrap justify-between">
         <!-- Eligibility -->
-        <div class="py-2 w-6/12 mr-6">
+        <div class="py-2 lg:w-6/12 w-full lg:mr-6">
           <h3 class="text-xl mb-2 font-bold">Eligibility</h3>
           <p class="text-sm font-semibold mb-4">
             NTUMUN does not discriminate on the basis of race, color, religion (creed), gender, nationality, disability, or marital status.
@@ -159,9 +159,9 @@
         </div>
         <!-- End of eligibility -->
         <!-- Register and pay -->
-        <div class="py-2 w-6/12 ml-6">
+        <div class="py-2 lg:w-6/12 w-full lg:ml-6">
           <h3 class="text-xl mb-4 font-bold">Cost of Attendance</h3>
-          <table class="table-auto text-sm">
+          <table class="table-auto text-sm md:table hidden">
             <thead>
               <tr>
                 <th class="border-2 px-4 py-2">Type</th>
@@ -196,13 +196,85 @@
                 <td class="border-2 px-4 py-2">7<sup>th</sup> February</td>
               </tr>
             </tbody>
+          </table>
+
+          <!-- Split up table for smaller displays -->
+          <table class="table-auto text-sm md:hidden w-full my-3">
+            <thead>
+              <th class="border-2 px-4 py-2" colspan="2">Early Bird Registration</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border-2 px-4 py-2">Local</td>
+                <td class="border-2 px-4 py-2">SGD 85</td>
+              </tr>
+              <tr>
+                <td class="border-2 px-4 py-2">International (without accommodation)</td>
+                <td class="border-2 px-4 py-2">SGD 110</td>
+              </tr>
+              <tr>
+                <td class="border-2 px-4 py-2">International (with accommodation)</td>
+                <td class="border-2 px-4 py-2">SGD 310</td>
+              </tr>
+              <tr>
+                <td class="border-2 px-4 py-2">Payment Deadline</td>
+                <td class="border-2 px-4 py-2">15<sup>th</sup> November</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table-auto text-sm md:hidden w-full my-3">
+            <thead>
+              <th class="border-2 px-4 py-2" colspan="2">Regular Registration</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border-2 px-4 py-2">Local</td>
+                <td class="border-2 px-4 py-2">SGD 105</td>
+              </tr>
+              <tr>
+                <td class="border-2 px-4 py-2">International (without accommodation)</td>
+                <td class="border-2 px-4 py-2">SGD 130</td>
+              </tr>
+              <tr>
+                <td class="border-2 px-4 py-2">International (with accommodation)</td>
+                <td class="border-2 px-4 py-2">SGD 330</td>
+              </tr>
+              <tr>
+                <td class="border-2 px-4 py-2">Payment Deadline</td>
+                <td class="border-2 px-4 py-2">11<sup>th</sup> January</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table-auto text-sm md:hidden w-full my-3">
+            <thead>
+              <th class="border-2 px-4 py-2" colspan="2">Late Registration</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border-2 px-4 py-2">Local</td>
+                <td class="border-2 px-4 py-2">SGD 105</td>
+              </tr>
+              <tr>
+                <td class="border-2 px-4 py-2">International (without accommodation)</td>
+                <td class="border-2 px-4 py-2">SGD 150</td>
+              </tr>
+              <tr>
+                <td class="border-2 px-4 py-2">International (with accommodation)</td>
+                <td class="border-2 px-4 py-2">SGD 350</td>
+              </tr>
+              <tr>
+                <td class="border-2 px-4 py-2">Payment Deadline</td>
+                <td class="border-2 px-4 py-2">7<sup>th</sup> February</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <!-- End of register and pay -->
     </div>
-        <div class="flex flex-row w-full justify-startitems-center">
-        <a href="#" class="text-md leading-none text-white border-white py-2 px-4 border-2 font-bold rounded mr-3">Instructions</a>
-        <a href="#" class="text-md leading-none text-white border-white py-2 px-4 border-2 font-bold rounded mr-3">Register</a>
-        <a href="#" class="text-md leading-none text-white border-white py-2 px-4 border-2 font-bold rounded">Pay</a>
+        <div class="flex flex-row flex-wrap w-full justify-start items-center">
+        <a href="#" class="text-md text-center leading-none text-white border-white py-2 px-4 border-2 font-bold rounded md:mr-3 md:w-40 md:mt-5 w-full my-2">Instructions</a>
+        <a href="#" class="text-md text-center leading-none text-white border-white py-2 px-4 border-2 font-bold rounded md:mr-3 md:w-40 md:mt-5 w-full my-2">Register</a>
+        <a href="#" class="text-md text-center leading-none text-white border-white py-2 px-4 border-2 font-bold rounded md:w-40 w-full md:mt-5 my-2">Pay</a>
         </div>
   </section>
   <!-- End of Registration section -->
@@ -210,7 +282,7 @@
   <!-- About the conference section -->
   <section id="the-committees" class="relative text-center">
     <div class="grid-overlay-text absolute z-10 flex justify-center align-center p-4">
-      <h1 class="font-display font-bold text-white uppercase tracking-widest pointer-events-none">The Committees</h1>
+      <h1 class="font-display font-bold text-white uppercase tracking-widest pointer-events-none lg:block hidden">The Committees</h1>
     </div>
     <!-- Committees -->
     <div class="grid w-full">
@@ -249,11 +321,11 @@
   <!-- End of about the committees section -->
 
   <!-- Contact us section -->
-  <section id="contact-us" class="bg-white flex flex-col items-center text-black py-10 px-16">
+  <section id="contact-us" class="bg-white flex flex-col items-center text-black lg:p-10 py-10 px-8">
     <h2 class="font-display text-3xl mr-auto mb-3">Contact Us</h2>
-    <div class="flex flex-row justify-between items-center">
+    <div class="relative flex flex-row lg:flex-no-wrap flex-wrap justify-between items-start">
       <!-- Contact message and form-->
-      <div class="flex flex-col w-6/12">
+      <div class="flex flex-col lg:w-6/12 w-full">
         <p class="mb-4 text-sm">
           Thank you for your interest in Nanyang Technological University Model United Nations. We will be glad to answer any questions relating to our conference. We also welcome suggestions for improving NTUMUN. You can reach us at our email, facebook page, instagram, or drop us a message in the box below!
         </p>
@@ -298,17 +370,19 @@
           </div>
         </form>
       </div>
-      <div class="">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.708836012239!2d103.68555441475407!3d1.3512375990144956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da0fa6ae7d6b97%3A0xe4cbbbe3b9561ce9!2sNanyang%20Executive%20Centre!5e0!3m2!1sen!2ssg!4v1574467623857!5m2!1sen!2ssg" width="600" height="580" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <div class="lg:w-6/12 lg:ml-8 lg:mt-0 w-full mt-4"> 
+        <div class="google-maps">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.708836012239!2d103.68555441475407!3d1.3512375990144956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da0fa6ae7d6b97%3A0xe4cbbbe3b9561ce9!2sNanyang%20Executive%20Centre!5e0!3m2!1sen!2ssg!4v1574467623857!5m2!1sen!2ssg" width="600" height="580" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
       </div>
     </div>
   </section>
   <!-- End of contact us section -->
   <!-- Start of FAQ section -->
-  <section id="faq" class="bg-blue-400 flex flex-col items-center py-10 px-16">
+  <section id="faq" class="bg-blue-400 flex flex-col items-center lg:p-10 py-10 px-8">
     <h2 class="font-display text-3xl mr-auto text-white mb-4">Frequently Asked Questions</h2>
-    <div class="flex flex-row w-full">
-      <div class="flex flex-col items-center w-6/12 mr-8">
+    <div class="flex flex-row lg:flex-no-wrap flex-wrap w-full">
+      <div class="flex flex-col items-center lg:w-6/12 w-full lg:mr-8">
         <details class="relative border-2 border-white rounded text-md px-3 py-4 w-full" >
           <summary>
             What is Model United Nations?
@@ -327,7 +401,7 @@
         </details>
         <details class="relative border-2 border-white rounded text-md px-3 py-4 w-full" >
           <summary>
-            Where will the conference be held?
+            Where will it be held?
             <i class="control-icon control-icon-expand fas fa-angle-down"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></i>
             <i class="control-icon control-icon-close fas fa-times"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></i>
           </summary>
@@ -350,7 +424,7 @@
           <p class="mt-2">Students aged 15 to 25 years at the time of the conference are eligible to attend NTUMUN.</p>
         </details>
       </div>
-      <div class="flex flex-col items-center w-6/12 ml-8">
+      <div class="flex flex-col items-center lg:w-6/12 lg:mt-0 w-full mt-4 lg:ml-8">
         <details class="relative border-2 border-white rounded text-md px-3 py-4 w-full" >
           <summary>
             How many delegates can represent a school?

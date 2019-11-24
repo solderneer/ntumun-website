@@ -1,13 +1,14 @@
 .google-maps {
-    position: relative;
-    padding-bottom: 42%;
-    height: 0;
-    overflow: hidden;
+  height: 0;
+	overflow: hidden;
+	padding-bottom: 75%; /* desired aspect ratio */
+	position: relative;
 }
 .google-maps iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
+  border: 0;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }

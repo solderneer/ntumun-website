@@ -21,6 +21,9 @@ summary {
   cursor: pointer;
   color: white;
 }
+ summary i {
+   margin-left: 1rem;
+ }
 
 summary:focus {
   outline: none;
