@@ -1,10 +1,11 @@
 # build stage
-FROM node:lts-alpine as build-stage
+FROM node:13 as build-stage
 WORKDIR /app
-COPY package*.json ./
+COPY package.json ./
+COPY yarn.lock ./
 RUN yarn
 COPY . .
-RUN parcel build index.html
+RUN yarn build
 
 # production stage
 FROM nginx:stable-alpine as production-stage
