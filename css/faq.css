@@ -27,7 +27,6 @@ summary {
 
 summary:focus {
   outline: none;
-  box-shadow: 0 0 0 4px #f6f7f8, 0 0 0 5px rebeccapurple;
 }
 
 summary::-webkit-details-marker {
