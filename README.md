@@ -1,6 +1,8 @@
 # ntumun-website
 A sample for a better NTUMUN website. Currently hosted [here](https://ntumun.solderneer.me)
 
+![Preview Image](/preview.png)
+
 ## How to run
 ### Running locally
 * Yarn
