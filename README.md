@@ -1,5 +1,5 @@
 # ntumun-website
-A sample for a better NTUMUN website. Currently hosted at ntumun.solderneer.me
+A sample for a better NTUMUN website. Currently hosted [here](ntumun.solderneer.me)
 
 ## How to run
 ### Running locally
