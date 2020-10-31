@@ -1,0 +1,56 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ntumun-site
+  labels:
+    app: ntumun-site
+spec:
+  selector:
+    matchLabels:
+      app: ntumun-site
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ntumun-site
+    spec:
+      containers:
+      - name: ntumun-site
+        image: registry.digitalocean.com/athens/ntumun-site:latest
+        ports:
+        - name: web
+          containerPort: 80
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: ntumun-site
+
+spec:
+  ports:
+    - protocol: TCP
+      name: web
+      port: 80
+  selector:
+    app: ntumun-site
+
+---
+
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: ntumun-site-route
+  namespace: default
+spec:
+  entryPoints:
+    - websecure
+  routes:
+  - match: Host(`ntumun.solderneer.me`)
+    kind: Rule
+    services:
+    - name: ntumun-site
+      port: 80
+  tls:
+    certResolver: myresolver
